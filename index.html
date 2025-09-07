@@ -1,38 +1,144 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NFLIX — Crée ton film</title>
-  <meta name="description" content="NFLIX transforme vos moments (mariage, anniversaire, voyage, entreprise) en films dignes du cinéma.">
-  <link rel="canonical" href="https://nflix.io/">
-  <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0b10;color:#eef}
-    .wrap{max-width:820px;margin:8vh auto;padding:0 20px}
-    h1{font-size:34px;margin:0 0 10px}
-    p{line-height:1.6;color:#ccd}
-    a{color:#66d0ff;text-decoration:none}
-    a:hover{text-decoration:underline}
-    .box{border:1px solid #222;border-radius:12px;padding:22px;background:#12121a;margin-top:22px}
-    footer{margin-top:40px;font-size:14px;color:#99a}
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NFLIX — Vos moments, en film</title>
+  <meta name="description" content="NFLIX transforme vos vidéos et photos en films dignes de Netflix grâce à l’IA." />
+  <link rel="canonical" href="https://nflix.io/" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="wrap">
-    <h1>Bienvenue sur <strong>NFLIX</strong></h1>
-    <p>Transformez vos moments (mariages, anniversaires, voyages, entreprises, clips) en <strong>films dignes du cinéma</strong>.</p>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">NFLIX</a>
+      <nav class="menu">
+        <a href="#comment-ca-marche">Comment ça marche</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="mailto:contact@nflix.io?subject=Projet%20NFLIX">Commencer</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="box">
-      <p><strong>Liens légaux</strong></p>
-      <ul>
-        <li><a href="/cgu.html">Conditions d’utilisation (CGU)</a></li>
-        <li><a href="/confidentialite.html">Politique de confidentialité</a></li>
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Transformez vos moments en <span class="accent">films</span></h1>
+      <p class="sub">
+        Mariages, anniversaires, voyages, entreprise… envoyez vos médias, on livre un montage ciné
+        grâce à l’IA — simple, rapide, sans stress.
+      </p>
+      <div class="cta">
+        <a class="btn" href="mailto:contact@nflix.io?subject=Je%20veux%20cr%C3%A9er%20un%20film%20NFLIX">Démarrer mon projet</a>
+        <a class="btn btn-ghost" href="#tarifs">Voir les tarifs</a>
+      </div>
+      <ul class="badges">
+        <li>⚡ Livraison rapide</li>
+        <li>🎬 Qualité ciné</li>
+        <li>🔒 Paiements sécurisés</li>
       </ul>
     </div>
+  </section>
 
-    <footer>
-      © NFLIX – Tous droits réservés.
-    </footer>
-  </main>
+  <section id="comment-ca-marche" class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>1) Vous envoyez</h3>
+        <p>Vidéos, photos, consignes. Un lien d’upload vous est fourni.</p>
+      </div>
+      <div class="card">
+        <h3>2) On monte avec l’IA</h3>
+        <p>Nettoyage, tri, musique, titrage, étalonnage — piloté par nos outils IA.</p>
+      </div>
+      <div class="card">
+        <h3>3) Vous validez</h3>
+        <p>Vous recevez un lien de prévisualisation. Ajustements légers inclus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tarifs" class="section alt">
+    <div class="container">
+      <h2>Tarifs simples</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Essentiel</h3>
+          <p class="price">49€</p>
+          <ul>
+            <li>Jusqu’à 5 min</li>
+            <li>Musique libre de droit</li>
+            <li>1 round d’ajustements</li>
+          </ul>
+          <a class="btn btn-block" href="mailto:contact@nflix.io?subject=Commande%20Essentiel">Choisir Essentiel</a>
+        </div>
+        <div class="price-card featured">
+          <h3>Pro</h3>
+          <p class="price">129€</p>
+          <ul>
+            <li>Jusqu’à 12 min</li>
+            <li>Transitions premium</li>
+            <li>2 rounds d’ajustements</li>
+          </ul>
+          <a class="btn btn-block" href="mailto:contact@nflix.io?subject=Commande%20Pro">Choisir Pro</a>
+        </div>
+        <div class="price-card">
+          <h3>Business</h3>
+          <p class="price">Sur devis</p>
+          <ul>
+            <li>Branding & formats réseaux</li>
+            <li>Montages récurrents</li>
+            <li>Priorité & SLA</li>
+          </ul>
+          <a class="btn btn-block" href="mailto:contact@nflix.io?subject=Demande%20Business">Nous contacter</a>
+        </div>
+      </div>
+      <p class="note">Paiements par lien sécurisé (Stripe). Facture fournie.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Quels formats accepter ?</summary>
+        <p>Tous les formats standard (MP4, MOV, JPG, PNG). On fournit un lien d’upload.</p>
+      </details>
+      <details>
+        <summary>Délais de livraison ?</summary>
+        <p>Généralement 48–72h selon la durée et le volume.</p>
+      </details>
+      <details>
+        <summary>Révisions ?</summary>
+        <p>Au moins 1 round inclus selon l’offre (cf. tarifs).</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">NFLIX</div>
+        <p>Vos moments, en film. Édition assistée par IA.</p>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="/cgu.html">Conditions d’utilisation</a></li>
+          <li><a href="/privacy.html">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@nflix.io">contact@nflix.io</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container tiny">© <span id="y"></span> NFLIX. Tous droits réservés.</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
